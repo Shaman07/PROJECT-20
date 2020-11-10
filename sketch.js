@@ -23,17 +23,15 @@ function draw() {
       &&wall.y-car.y<car.height/2+wall.height/2){
     car.velocity = 0;
     }
-    if(deformation<80
-      && car.velocity===0){
+    if(deformation<80){
       car.shapeColor = "green";
     }
     if(deformation>80
-      &&deformation<180
-      && car.velocity===0){
+      &&deformation<180){
       car.shapeColor = "yellow";
     }
-    if(deformation>180
-      && car.velocity===0){
+    if(deformation>180){
+      
       car.shapeColor = "red";
     }
   background(0);  
